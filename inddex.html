@@ -7,7 +7,7 @@
     <title>Student-Coffe Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/da798c2199.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -19,22 +19,28 @@
                <ul>
               <li><a href="#">Home</a></li>
                <li><a href="#">About</a></li>
-               <li><a href="#">Services</a></li>
+               <li><a href="#">Menu</a></li>
                <li><a href="#">Contact</a></li>
-               <button class="btn-login">Login</button>
+               <button class="btnlogin-popup">Login</button>
             </ul>
            </nav>
           </header>
+
+          <div class="text-box">
+            <h2>Sweet & Savory <br>at <span class="yellow">Royal Pastries</span></h2>
+            <p>Your favourite snacks made to your taste</p>
+            <a href="#">Visit Us To Know More</a>
+          </div>
+
           <div class="wrapper">
-              <div class="form-box">
+            <span class="close-icon">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
+              
+              <div class="form-box login">
                   <h2>Login</h2>
                   <form action="#">
                       <div class="input-box">
-                        <!--<div class="input-field">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" placeholder="Name">
-                        </div>-->
-
                         <div class="input-field">
                             <i class="fa-solid fa-envelope"></i>
                             <input type="email" required>
@@ -57,8 +63,42 @@
                       </div>
                   </form>
               </div>
+
+              <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+
+                    <div class="input-box">
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" required>
+                            <label>Username</label>
+                        </div>
+
+                    <div class="input-box">
+                      <div class="input-field">
+                          <i class="fa-solid fa-envelope"></i>
+                          <input type="email" required>
+                          <label>Email</label>
+                      </div>
+
+                      <div class="input-field">
+                          <i class="fa-solid fa-lock"></i>
+                          <input type="password" required>
+                          <label>Password</label>
+                      </div>
+                      <div class="remember">
+                          <label> <input type="checkbox">I agree to the terms & conditions</label>
+                      </div>
+                      <button type="submit" class="btn">Register</button>
+                      <div class="login-register">
+                          <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                      </div>
+                    </div>
+                </form>
+            </div>
           </div> 
         
-    <source src="main.js">
+    <script src="main.js"></script>
 </body>
 </html>
