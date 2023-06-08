@@ -19,8 +19,8 @@
            <nav class="navigation">
                <ul>
               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Gallery</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#gallery">Gallery</a></li>
                <li><a href="#">Contact</a></li>
                <button class="btnlogin-popup">Login</button>
             </ul>
@@ -101,11 +101,11 @@
           </div> 
        </section>
        
-       <section class="about">
+       <section class="about" id="about">
                     <h2>About Us</h2>
                 <div class="about-box">
                      <div class="about-img">
-                        <img src="image/cake4.jpg" alt="">
+                        <img src="image/cake4.jpg" alt="picture of a cake" loading="lazy">
                      </div>
 
                      <div class="about-text">
@@ -116,9 +116,69 @@
                         </p>
                         <a href="#">Learn More</a>
                      </div>
-                 </div>
+                         </div>
+       </section >
 
-       </section>
+       <section class="gallery" id="gallery">
+
+                <h2>Our Gallery</h2>
+
+                <ul class="controls">
+                    <li class="buttons active" data-filter="all">all</li>
+                    <li class="buttons" data-filter="cake">cake</li>
+                    <li class="buttons" data-filter="doughnut">doughnut</li>
+                    <li class="buttons" data-filter="ice-cream">ice-cream</li>
+                    <li class="buttons" data-filter="hambuger">hambuger</li>
+                    <li class="buttons" data-filter="pie">pie</li>
+                    
+                </ul>
+                <div class="image-container ">
+                   <a href="image/cake2.jpg" class="image cake">
+                         <img  class="img" src="image/cake2.jpg" alt="" loading="lazy">
+                   </a>
+                   <a href="image/cake1.jpg" class="image cake"> 
+                        <img class="img" src="image/cake1.jpg" alt="" loading="lazy">
+                   </a>
+                    <a href="image/cake3.jpg" class="image cake">
+                        <img  class="img" src="image/cake3.jpg" alt="" loading="lazy">
+                    </a>
+                    <a href="image/cake5.jpg" class="image cake">
+                        <img  class="img" src="image/cake5.jpg" alt="" loading="lazy">
+                    </a>
+                    <a href="image/doughnut.jpg" class="image doughnut">
+                        <img  class="img" src="image/doughnut.jpg" alt="" loading="lazy">
+                    </a>
+                    <a href="image/doughnut1.jpg" class="image doughnut">
+                        <img  class="img" src="image/doughnut1.jpg" alt="" loading="lazy">
+                    </a>
+                    <a href="image/doughnut2.jpg" class="image doughnut">
+                        <img  class="img" src="image/doughnut2.jpg" alt="" loading="lazy">
+                    </a>
+                    <a href="image/doughnut3.jpg" class="image doughnut">
+                        <img  class="img" src="image/doughnut3.jpg" alt="" loading="lazy">
+                    </a>
+                    <a href="image/ice-cream.jpg" class="image ice-cream">
+                        <img  class="img" src="image/ice-cream.jpg" alt="" loading="lazy">
+                    </a>
+                    <a href="image/íce-cream2.jpg" class="image ice-cream">
+                        <img  class="img" src="image/íce-cream2.jpg" alt="" loading="lazy">
+                    </a>
+                    <a href="image/pie.jpg" class="image pie">
+                        <img  class="img" src="image/pie.jpg" alt="" loading="lazy">
+                    </a>
+                    <a href="image/pie2.jpg" class="image pie">
+                        <img  class="img" src="image/pie2.jpg" alt="" loading="lazy">
+                    </a>
+                    <a href="image/burgger.jpg" class="image hambuger">
+                        <img  class="img" src="image/burgger.jpg" alt="" loading="lazy">
+                    </a>
+                    <a href="image/burgger2.jpg" class="image hambuger">
+                        <img  class="img" src="image/burgger2.jpg" alt="" loading="lazy">
+                    </a>
+
+                </div>
+         </section>
+
     <script src="main.js"></script>
 </body>
 </html>

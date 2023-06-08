@@ -20,3 +20,17 @@ btnPopup.addEventListener('click', ()=> {
 closeIcon.addEventListener('click', ()=> {
     wrapper.classList.remove('active-popup');
 }); 
+
+const controls = document.querySelectorAll('.controls li');
+const imageContainer = document.querySelectorAll('.image-container .image');
+
+console.log(controls, imageContainer);
+
+const filterCards = e =>{
+    document.querySelector('active').tagName.remove('active');
+    e.target.tagName.add('active')
+
+
+}
+
+controls.forEach(li => li.addEventListener('click', filterCards))
