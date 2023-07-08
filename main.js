@@ -39,38 +39,31 @@ let items = [
     category: "cake",
   },
   {
+    src: "image/pie.jpg",
+    category: "pie",
+  },
+  {
     src: "image/cake1.jpg",
     category: "cake",
   },
-  {
-    src: "image/cake3.jpg",
-    category: "cake",
-  },
-  {
-    src: "image/cake5.jpg",
-    category: "cake",
-  },
+
   {
     src: "image/doughnut.jpg",
     category: "doughnut",
   },
   {
-    src: "image/doughnut1.jpg",
-    category: "doughnut",
+    src: "image/cake3.jpg",
+    category: "cake",
   },
-  {
-    src: "image/doughnut2.jpg",
-    category: "doughnut",
-  },
-  {
-    src: "image/doughnut3.jpg",
-    category: "doughnut",
-  },
+
   {
     src: "image/ice-cream.jpg",
     category: "ice-cream",
   },
-
+  {
+    src: "image/doughnut1.jpg",
+    category: "doughnut",
+  },
   {
     src: "image/íce-cream2.jpg",
     category: "ice-cream",
@@ -79,20 +72,31 @@ let items = [
     src: "image/burgger.jpg",
     category: "hamburger",
   },
+
+  {
+    src: "image/cake5.jpg",
+    category: "cake",
+  },
+
+  {
+    src: "image/doughnut3.jpg",
+    category: "doughnut",
+  },
+
   {
     src: "image/burgger2.jpg",
     category: "hamburger",
   },
-  {
-    src: "image/pie.jpg",
-    category: "pie",
-  },
+
   {
     src: "image/pie2.jpg",
     category: "pie",
   },
+  {
+    src: "image/doughnut2.jpg",
+    category: "doughnut",
+  },
 ];
-
 
 let html = items.map((item) => {
   return `<a href=${item.src} class="image ${item.category}">
