@@ -32,6 +32,7 @@ const filterCards = (e) => {
 
 controls.forEach((li) => li.addEventListener("click", filterCards));
 
+//items data
 let items = [
   {
     src: "image/cake2.jpg",
@@ -92,6 +93,7 @@ let items = [
   },
 ];
 
+
 let html = items.map((item) => {
   return `<a href=${item.src} class="image ${item.category}">
      <img class="img" src=${item.src} alt=${item.category} loading="lazy">
@@ -99,6 +101,7 @@ let html = items.map((item) => {
 });
 document.querySelector("#items").innerHTML = html;
 
+//filter functionality
 const filterItems = (value) => {
   const filteredItems = items.filter((item) => {
     if (value) {
@@ -112,6 +115,5 @@ const filterItems = (value) => {
   <img class="img" src=${item.src} alt=${item.category} loading="lazy">
 </a>`
   );
-  console.log(html);
   document.querySelector("#items").innerHTML = html;
 };
